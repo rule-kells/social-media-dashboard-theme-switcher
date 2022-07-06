@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./main.js"></script>
+
+
+</head>
+
+<body>
+  <div>
+    <header class="hero flex container">
+      <div class="hero__content">
+        <h1 class="fs-header-m 700">Social Media Dashboard</h1>
+        <p class="fs-sub fw-700 text-color">Total Followers: 23,004</p>
+      </div>
+      <fieldset class="hero__toggle-theme" aria-label="user theme toggle" role="radiogroup">
+        <div class="toggle-theme">
+          <label for="dark" class="fs-sub fw-700 mode">Dark Mode</label>
+          <div class="toggle-theme__wrapper">
+            <input type="radio" name="theme" id="dark" checked>
+            <input type="radio" name="theme" id="light">
+            <span aria-hidden="true" class="toggle__bg"></span>
+            <span aria-hidden="true" class="toggle__switcher"></span>
+          </div>
+          <label for="light" aria-label="light mode"></label>
+        </div>
+      </fieldset>
+    </header>
+    <main>
+      <div class="grid total-followers container">
+        <div class="card center facebook">
+          <div class="card__header">
+            <img src="./images/icon-facebook.svg" alt="Facebook">
+            <h4 class="fs-metrics fw-700 text-color">@nathanf</h4>
+          </div>
+          <div class="card__mid">
+            <h3 class="fs-header-xl fw-700">1987</h3>
+            <p class="fs-metrics fw-400 fs-letter-spacing text-color">Followers</p>
+          </div>
+          <p class="fs-metrics fs-400 today up">12 Today</p>
+        </div>
+        <div class="card center twitter">
+          <div class="card__header">
+            <img src="./images/icon-twitter.svg" alt="Twitter">
+            <h4 class="fs-metrics fw-700 text-color">@nathanf</h4>
+          </div>
+          <div class="card__mid">
+            <h3 class="fs-header-xl fw-700">1044</h3>
+            <p class="fs-metrics fw-400 fs-letter-spacing text-color">Followers</p>
+          </div>
+          <p class="fs-metrics fs-400 today up">99 Today</p>
+        </div>
+        <div class="card center instagram">
+          <div class="card__header">
+            <img src="./images/icon-instagram.svg" alt="Instagram">
+            <h4 class="fs-metrics fw-700 text-color">@realnathanf</h4>
+          </div>
+          <div class="card__mid">
+            <h3 class="fs-header-xl fw-700">11k</h3>
+            <p class="fs-metrics fw-400 fs-letter-spacing text-color">Followers</p>
+          </div>
+          <p class="fs-metrics fs-400 today up">1099 Today</p>
+        </div>
+        <div class="card center youtube">
+          <div class="card__header">
+            <img src="./images/icon-youtube.svg" alt="YouTube">
+            <h4 class="fs-metrics fw-700 text-color">Nathan F.</h4>
+          </div>
+          <div class="card__mid">
+            <h3 class="fs-header-xl fw-700">8239</h3>
+            <p class="fs-metrics fs-400 fs-letter-spacing text-color">Subscribers</p>
+          </div>
+          <p class="fs-metrics fs-400 today down">144 Today</p>
+        </div>
+      </div>
+      <div class="container overview">
+        <h2 class="fs-header-s">Overview - Today</h2>
+        <div class="overview__wrapper grid">
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Page Views</p>
+            <h3 class="fs-header-l fw-700">87</h3>
+            <img src="./images/icon-facebook.svg" alt="Facebook">
+            <p class="fs-metrics fw-700 up">3%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Likes</p>
+            <h3 class="fs-header-l fw-700">52</h3>
+            <img src="./images/icon-facebook.svg" alt="Facebook">
+            <p class="fs-metrics fw-700 down">2%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Likes</p>
+            <h3 class="fs-header-l fw-700">5462</h3>
+            <img src="./images/icon-instagram.svg" alt="Instagram">
+            <p class="fs-metrics fw-700 up">2257%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Profile Views</p>
+            <h3 class="fs-header-l fw-700">52k</h3>
+            <img src="./images/icon-instagram.svg" alt="Instagram">
+            <p class="fs-metrics fw-700 up">1375%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Retweets</p>
+            <h3 class="fs-header-l fw-700">117</h3>
+            <img src="./images/icon-twitter.svg" alt="Twitter">
+            <p class="fs-metrics fw-700 up">303%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Likes</p>
+            <h3 class="fs-header-l fw-700">507</h3>
+            <img src="./images/icon-twitter.svg" alt="Twitter">
+            <p class="fs-metrics fw-700 up">553%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Likes</p>
+            <h3 class="fs-header-l fw-700">107</h3>
+            <img src="./images/icon-youtube.svg" alt="YouTube">
+            <p class="fs-metrics fw-700 down">19%</p>
+          </div>
+          <div class="card flex">
+            <p class="fs-sub fw-700 text-color">Total Views</p>
+            <h3 class="fs-header-l fw-700">1407</h3>
+            <img src="./images/icon-youtube.svg" alt="YouTube">
+            <p class="fs-metrics fw-700 down">12%</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Kellen Ruyle</a>.
+    </footer>
+  </div>
+
+</body>
+
+</html>
